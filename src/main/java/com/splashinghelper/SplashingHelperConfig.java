@@ -16,4 +16,12 @@ public interface SplashingHelperConfig extends Config
 	{
 		return "Hello";
 	}
+
+	@ConfigItem(
+			keyName = "enable",
+			name = "Enable",
+			description = "enables debug"
+	)
+	default boolean enable() {return true;}
+
 }
